@@ -1,0 +1,151 @@
+// Contact
+.contact_mobile {
+    display: none;
+}
+
+.contact_section {
+    font-family: 'Lustria', serif;
+    background-color: #F0AF48;
+    padding-bottom: 30px;
+    .contact {
+        display: flex;
+        justify-content: space-evenly;
+        padding-top: 50px;
+        width: 95%;
+        margin: auto;
+    }
+    .logo_img {
+        img {
+            height: 200px;
+            width: 650px;
+        }
+    }
+    .contact_add {
+        flex: 1;
+        h1 {
+            font-size: 22px;
+            font-weight: 400;
+        }
+        strong {
+            font-weight: 900;
+        }
+        p {
+            padding-top: 15px;
+            font-size: 18px;
+            width: 80%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+    .teams {
+        flex: 1;
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        p {
+            padding-top: 10px;
+            font-size: 24px;
+            font-weight: lighter;
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    // Contact
+    .contact_section {
+        .logo_img {
+            flex: 1;
+            img {
+                height: 150px;
+                width: 400px;
+            }
+        }
+        .contact_add {
+            h1 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+        .follow {
+            h1 {
+                font-size: 25px;
+            }
+            img {
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    // Contact
+    .contact_section {
+        display: none;
+    }
+    .contact_mobile {
+        font-family: 'Lustria', serif;
+        background-color: #F0AF48;
+        display: grid;
+        .contact {
+            padding-top: 50px;
+            .heading {
+                display: flex;
+                justify-content: center;
+                h1 {
+                    font-size: 26px;
+                    font-weight: 400;
+                }
+            }
+            .contact_add {
+                padding-top: 80px;
+                flex: 1;
+                h1 {
+                    text-align: center;
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+                p {
+                    text-align: center;
+                    font-size: 16px;
+                    font-weight: lighter;
+                }
+            }
+            .teams {
+                padding-top: 50px;
+                padding-bottom: 50px;
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
+                p {
+                    text-align: center;
+                    padding-top: 10px;
+                    font-size: 16px;
+                }
+            }
+            .follow {
+                padding-bottom: 50px;
+                h1 {
+                    font-size: 35px;
+                    text-align: center;
+                    padding-top: 20px;
+                    font-weight: 400;
+                }
+                .social {
+                    padding-top: 10px;
+                    width: 60%;
+                    margin: auto;
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        padding: 0 10px 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,174 @@
+.page1 {
+    #mobile_nav {
+        display: none;
+    }
+    .ham_menu {
+        display: none;
+    }
+    // nav
+    nav {
+        position: fixed;
+        background-image: url('../FwdMissingAmyrkDesktop/Group40.png');
+        display: flex;
+        width: 100%;
+        margin: auto;
+        padding-top: 10px;
+        justify-content: space-between;
+        z-index: 1;
+        .logo {
+            margin-left: 0px;
+            padding-top: 0px;
+            img {
+                height: 120px;
+                width: 370px;
+            }
+        }
+        color: white;
+        .nav_items {
+            width: 70%;
+            margin: auto;
+            .nav_links {
+                display: flex;
+                justify-content: space-evenly;
+                padding-left: 0%;
+                li {
+                    list-style: none;
+                    font-size: 26px;
+                    font-weight: 500;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        span {
+                            color: #F0AF48;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .page1 {
+        // nav
+        nav {
+            display: flex;
+            width: 100%;
+            margin: auto;
+            padding-top: 10px;
+            justify-content: space-around;
+            .logo {
+                margin-left: -50px;
+                padding-left: 10px;
+                img {
+                    height: 150px;
+                    width: 430px;
+                }
+            }
+            .nav_items {
+                width: 60%;
+                margin: auto;
+                .nav_links {
+                    display: flex;
+                    justify-content: space-evenly;
+                    padding-left: 4%;
+                    li {
+                        list-style: none;
+                        font-size: 25px;
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            span {
+                                color: #F0AF48;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 991.98px) {
+    .page1 {
+        // Nav Bar
+        #desktop_nav {
+            display: none;
+        }
+        #mobile_nav {
+            background-image: none;
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            margin: auto;
+            .logo_mobile {
+                padding: 0px 0 0px 10px;
+                img {
+                    height: 50px;
+                    width: 55px;
+                }
+            }
+            .logo_name {
+                p {
+                    color: #F0AF48;
+                    font-size: 14px;
+                    padding-top: 13px;
+                }
+            }
+            .mobile_ham {
+                display: flex;
+                justify-content: end;
+                #ham {
+                    position: fixed;
+                }
+                padding-top: 8px;
+            }
+        }
+        .ham_menu {
+            display: inline;
+            width: 100%;
+            background-color: white;
+            position: fixed;
+            transform: translate3d(0, -500px, 0);
+            transition: transform .3s cubic-bezier(0, .52, 0, 1);
+            z-index: 1000;
+            padding-top: 55px;
+            .menu_logos {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                margin: auto;
+                .logo_mobile {
+                    padding: 0px 0 0px 0;
+                    img {
+                        height: 50px;
+                        width: 55px;
+                    }
+                }
+                .mobile_ham {
+                    padding-top: 15px;
+                }
+            }
+            .ham_nav_links {
+                padding-bottom: 50px;
+                text-align: center;
+                li {
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        font-size: 18px;
+                        font-weight: 400;
+                        span {
+                            color: #F0AF48;
+                        }
+                    }
+                }
+            }
+        }
+        .show {
+            transform: translate3d(0, -40px, 0);
+        }
+    }
+}
